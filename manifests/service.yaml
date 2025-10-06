@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: nginx-service
   annotations:
-    service.beta.kubernetes.io/aws-load-balancer-type: "nlb" # or "elb" for classic LB
+    service.beta.kubernetes.io/aws-load-balancer-type: "elb" # or "elb" for classic LB
     service.beta.kubernetes.io/aws-load-balancer-scheme: "internet-facing" # or "internal" for private
 spec:
   type: LoadBalancer
