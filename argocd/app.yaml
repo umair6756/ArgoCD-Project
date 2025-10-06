@@ -6,7 +6,7 @@ metadata:
 spec:
   project: nginx-project
   source:
-    repoURL: 'https://github.com/umair-devops/argocd-nginx-demo.git'
+    repoURL: 'https://github.com/umair6756/ArgoCD-Project.git'
     targetRevision: HEAD
     path: manifests
   destination:
