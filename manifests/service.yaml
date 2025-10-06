@@ -3,9 +3,8 @@ kind: Service
 metadata:
   name: nginx-service
   annotations:
-    service.beta.kubernetes.io/oci-load-balancer-shape: "flexible"
-    service.beta.kubernetes.io/oci-load-balancer-shape-flex-min: "10"
-    service.beta.kubernetes.io/oci-load-balancer-shape-flex-max: "100"
+    service.beta.kubernetes.io/aws-load-balancer-type: "nlb" # or "elb" for classic LB
+    service.beta.kubernetes.io/aws-load-balancer-scheme: "internet-facing" # or "internal" for private
 spec:
   type: LoadBalancer
   selector:
